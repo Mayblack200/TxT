@@ -145,15 +145,40 @@ const items  [
 
 ### indexOf()
 ### LastIndexOf()
-### find()
+### Find 
+Ritornerà il primo elemento che riporta questa proprietà
+
+const findItem = item.find((item) => {
+return item.name === 'Album'
+})
+console.log(findItem)
+---
+
 ### findIndex()
 ### includes()
 
 ## iterazione
 
 ### forEach()
-### map()
-### filter()
+
+### Map
+Serve per riportare una determinata qualità degli elementi all'interno 
+
+const itemNames = item.map((item) => {
+return item.name
+})
+console.log(itemNames)
+---
+
+### Filtered
+Trova gli elementi prescelti in base alla propietà scelta, non varia elementi nell'array 
+
+const filteredItems = items.filter((item) => {
+return item.price <= 100
+})
+console.log(filteredItems)
+---
+
 ### reduce()
 ### reduceRight()
 
@@ -168,29 +193,7 @@ const items  [
 ### flat()
 ### flatMap()
 
-### Filtered
-Trova gli elementi prescelti in base alla propietà scelta, non varia elementi nell'array 
 
-const filteredItems = items.filter((item) => {
-return item.price <= 100
-})
-console.log(filteredItems)
-
-### Map
-Serve per riportare una determinata qualità degli elementi all'interno 
-
-const itemNames = item.map((item) => {
-return item.name
-})
-console.log(itemNames)
-
-### Find 
-Ritornerà il primo elemento che riporta questa proprietà
-
-const findItems = item.find((item) => {
-return item.name === 'Album'
-})
-console.log(findItem)
 
 ### forEach
 
