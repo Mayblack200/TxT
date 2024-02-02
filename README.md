@@ -1,13 +1,21 @@
 # Ripasso in TxT 
 React e javascript in txt
 
+## Indice
+- [Introduzione](#introduzione)
+- [Funzionalità](#funzionalità)
+
+
+
 ## Numeri in JS
- JS è Case Sensitive e tipizzazione debole o dinamica  quando dichiaro una variabile  non ne specifici il tipo
-    Ogni tipo di dato primitivo può essere convertito in un altro tipo di dato primitivo 
+ JS è Case Sensitive e tipizzazione debole o dinamica  quando dichiaro una variabile  non ne specifici il tipo.
+ 
+ Ogni tipo di dato primitivo può essere convertito in un altro tipo di dato primitivo.
+ 
     Non ci sono distinzione di numeri decimali o interi --> var uno = 1.34;
     Si possono scirverei numeri in diverse basi es ottale o esadecimale --> var esadec = 0x123;
-    --> ottale inizia con 0
-    --> esadecimale con 0 e x 
+    ottale inizia con 0
+    esadecimale con 0 e x 
     ogni evento che va al di fuori dell'intervallo genera due valori speciali 
     infinity e -infinity 
     NaN --> Not a Number --> valore numerico non definito 
@@ -20,97 +28,17 @@ React e javascript in txt
     * !== strettamente diverso 
 
 
-## \n
- serve per andare a capo all'interno di una frase 
-    posso  usarlo anche per mettere all'interno di una stringa ' senza terminare la stringa
-    Es:  l\'altro ieri ho volato con l\'aereo 
-
-
 ## Variabili nome 
 
     Permesso : _ e $ 
     Non Permesso : numeri spazio . - ? !  
 
-
-## Operatore
-
-    * && --> and
-        es: 5 > 2 && 3 ! 4 
-    * || --> or
-        true || ( 4 >= 6 )
-    * !  --> not 
-.        
-
-
-## Array
-var arraygiorni = [
-    "lun",
-    "mar",
-];
-
-var ArrayMisto = [123, "Ciaoo", true, null ];
-##Array di Array
-var ArrArr = [123, "stringa", ['a', 'b', 'c']];
-
-## Array somma
-function summ(){
-    var z = arguments[2]+arguments[3];
-    return z;
+## Var Local VS Var Global
+var numGlob = 4;
+function functnumeroLocale(){
+    var numeroLoc = 8;
+    console.log(numeroLoc);
 }
-
-##Array Multidimensionali
-array matrici esempio sottostanmte di matrice 3x3 di interi 
-var matrice = [[12,34,21],[2,54,32],[37,54,6]]
-Per accedere all'interno di un determinato elemnto sarà come 
-var elementoPrecisoArrayPerIlDue = matrice[1][0] ## Partono da 0
-
-## Obj 
-var persona = {
-    nome: "Marta",
-    cognome: "Nove",
-}
-
-##, ? per assegnamenti condizionali 
- condizione ? valore : valore 2 
-    se condizione è vera viene restituito valore 1 se falsa valore 2
-    es:  
-    x%2 == 0 ? "pari" : "dispari" 
-
-
-## Operatori  di assegnamento composti
-
-    x += 3; --> x = x + 3;
-    "piano"+"forte"; --> pianoforte
-
-
-## Operatori Bitwise
-Trattano i valori numerici come sequenze di bit  
-  * & --> and bitwise -- confronta i bit degli oerandi e restituisce 1 se entrambi i bit sono 1 altrimenti 0
-  * | -->  or bitwise -- confronta a coppie i bit degli ooerandi e restituisce 1 se alemno uno dei bit è 1 altrimenti 0
-  * * --> xor -- confronta a coppie i bit degli operandi e restituisce 1 se uno dei bit ma non entrambi, è 1 altrimenti e 0 
-  * ~ --> not -- inverte il valore di ciascun numero
-  * << --> left shift -- sposta di n valori verso sinistra la rappresentazione binaria di un numero 
-  * >> --> right shift -- sposta di n valori verso destra la rappresentazione binaria di un numero 
-
-
-## Forme Compatte
-x += y --> x = x + y 
-   x -= y --> x = x - y
-   x *= y --> x = x * y
-   x /= y --> x = x / y
-   x %= y --> x = x % y
-   var strumento = "piano";
-   strumento += "forte";
-
-
-##Conversioni tra tipi di variabili 
-
-    undefined --> false
-    null --> false 
-    numero --> true in tutti i casi 
-    stringa vuota --> false 
-    stringa -->    true in tutti gli altri casi  
-
 
 ## Switch
 var number = 1;
@@ -128,12 +56,84 @@ function somma(){
 }
 var risultato = somma();
 
-## Var Local VS Var Global
-var numGlob = 4;
-function functnumeroLocale(){
-    var numeroLoc = 8;
-    console.log(numeroLoc);
+## Operatore
+
+    * && --> and
+        es: 5 > 2 && 3 ! 4 
+    * || --> or
+        true || ( 4 >= 6 )
+    * !  --> not      
+
+## \n
+ serve per andare a capo all'interno di una frase 
+    posso  usarlo anche per mettere all'interno di una stringa ' senza terminare la stringa
+    Es:  l\'altro ieri ho volato con l\'aereo 
+
+
+## ? per assegnamenti condizionali 
+ condizione ? valore : valore 2 
+    se condizione è vera viene restituito valore 1 se falsa valore 2
+    es:  
+    x%2 == 0 ? "pari" : "dispari" 
+    
+
+## Operatori Bitwise
+Trattano i valori numerici come sequenze di bit  
+  * & --> and bitwise -- confronta i bit degli oerandi e restituisce 1 se entrambi i bit sono 1 altrimenti 0
+  * | -->  or bitwise -- confronta a coppie i bit degli ooerandi e restituisce 1 se alemno uno dei bit è 1 altrimenti 0
+  * * --> xor -- confronta a coppie i bit degli operandi e restituisce 1 se uno dei bit ma non entrambi, è 1 altrimenti e 0 
+  * ~ --> not -- inverte il valore di ciascun numero
+  * << --> left shift -- sposta di n valori verso sinistra la rappresentazione binaria di un numero 
+  * >> --> right shift -- sposta di n valori verso destra la rappresentazione binaria di un numero 
+
+## Forme Compatte
+x += y --> x = x + y 
+   x -= y --> x = x - y
+   x *= y --> x = x * y
+   x /= y --> x = x / y
+   x %= y --> x = x % y
+   var strumento = "piano";
+   strumento += "forte";
+
+
+## Conversioni tra tipi di variabili 
+
+    undefined --> false
+    null --> false 
+    numero --> true in tutti i casi 
+    stringa vuota --> false 
+    stringa -->    true in tutti gli altri casi  
+
+## Array
+var arraygiorni = [
+    "lun",
+    "mar",
+];
+
+var ArrayMisto = [123, "Ciaoo", true, null ];
+##Array di Array
+var ArrArr = [123, "stringa", ['a', 'b', 'c']];
+
+
+## Array somma
+function summ(){
+    var z = arguments[2]+arguments[3];
+    return z;
 }
+
+##Array Multidimensionali
+array matrici esempio sottostanmte di matrice 3x3 di interi 
+var matrice = [[12,34,21],[2,54,32],[37,54,6]]
+Per accedere all'interno di un determinato elemnto sarà come 
+var elementoPrecisoArrayPerIlDue = matrice[1][0] ## Partono da 0
+
+## Object
+var persona = {
+    nome: "Marta",
+    cognome: "Nove",
+}
+
+
 ##Date e Orari 
 var nuovaData = new Date("01/1/2012 15:30" )
 
@@ -159,7 +159,7 @@ switch (oggi.getDay()) {
 }
 console.log("Oggi è " + giorno)
 
-##ARRAY per fars dare data attuale 
+##Array per farsi dare data attuale 
 var giorno = ["lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato", "domenica"][new Date().getDay()];
 console.log("Oggi è " + giorno);
 
@@ -214,7 +214,6 @@ toUTCString()	##Converte una data UTC in stringa
 La funzione parseInt() converte una stringa in un valore intero 
    prevede due parametri: il primo è la stringa da convertire, mentre il secondo 
    è opzionale e indica la base del sistema di rappresentazione numerica utilizzato.
- 
 
 ## parseFloat 
 La funzione prseFloat() 
