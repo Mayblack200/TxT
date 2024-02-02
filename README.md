@@ -7,7 +7,7 @@ React e javascript in txt
 
 
 
-## Numeri in JS
+## Numeri
  JS è Case Sensitive e tipizzazione debole o dinamica  quando dichiaro una variabile  non ne specifici il tipo.
  
  Ogni tipo di dato primitivo può essere convertito in un altro tipo di dato primitivo.
@@ -120,6 +120,84 @@ function summ(){
     var z = arguments[2]+arguments[3];
     return z;
 }
+
+## Metodi degli array 
+const items  [ 
+{ name: 'bike' price: 100 },
+{ name: 'TV' price: 200 },
+{ name: 'album' price: 10 },
+{ name: 'Book' price: 5 },
+{ name: 'Phone' price: 500 },
+{ name: 'Computer' price: 1000 },
+{ name: 'keyboardd' price: 25 }
+]
+
+## Manipolazione degli array 
+
+### Push()
+### Pop()
+### shift()
+### unshift() 
+### slice() 
+### splice()
+
+## Ricerca 
+
+### indexOf()
+### LastIndexOf()
+### find()
+### findIndex()
+### includes()
+
+## iterazione
+
+### forEach()
+### map()
+### filter()
+### reduce()
+### reduceRight()
+
+##Vari
+
+### concat()
+### join()
+### reverse()
+### sort()
+### every()
+### some()
+### flat()
+### flatMap()
+
+### Filtered
+Trova gli elementi prescelti in base alla propietà scelta, non varia elementi nell'array 
+
+const filteredItems = items.filter((item) => {
+return item.price <= 100
+})
+console.log(filteredItems)
+
+### Map
+Serve per riportare una determinata qualità degli elementi all'interno 
+
+const itemNames = item.map((item) => {
+return item.name
+})
+console.log(itemNames)
+
+### Find 
+Ritornerà il primo elemento che riporta questa proprietà
+
+const findItems = item.find((item) => {
+return item.name === 'Album'
+})
+console.log(findItem)
+
+### forEach
+
+const inexpensiveItems = items.some((item) = {
+return item.price <= 100
+})
+
 
 ##Array Multidimensionali
 array matrici esempio sottostanmte di matrice 3x3 di interi 
