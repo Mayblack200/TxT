@@ -175,10 +175,26 @@ Gli oggetti contengono elenco dati con key per recuoerarlo più facilmente
 
 ^ Bracket Notation --> console.log(obj["name"]);
 
+## operatore optional chaning ? 
+Permette di verificare che una proprietà di un oggetto esista effettivmaente prima di accedervi 
 
 
+es: 
+const obj ={
+  nome = "marya"
+  secondLevel: {
+    secondLevelName = "ottonella"
+  }
+};
+
+if(obj?.age){
+  console.log(obj.age)
+}
+
+if(obj?.seconLevelName?.secondLevelName) {
+console.log(obj.secondLevel.SecondLevelName)
 
 
-
-
-
+whoAmI: function(){
+return this.name + this.surname;
+};
