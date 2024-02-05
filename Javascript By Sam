@@ -1,0 +1,182 @@
+JAVASCRIPT BY SAM
+
+
+# Variabili 
+let x =2;
+const a = 1;
+a = 2; // errore
+const b = [1, 2, 3];
+b.push(4); // b => [1, 2, 3, 4] nessun errore (approfondito più avanti)
+b = [1, 2, 3, 4, 5]
+
+Qualora una costante contenga un oggetto od un array sarà possibile modificarne il contenuto purchè esso non venga riassegnato
+totalmente 
+
+Scope
+Con scope si intende la visibilità di una porzione di codice rispetto ad un’altra.
+una variabile con scope globale all’interno di un file .js sarà visibile e interagibile da qualsiasi punto del codice.
+Con l’introduzione del concetto di blocked scope ora si possono creare zone con scope
+specifici, in modo da avere “bolle di codice” che “tengano segreto” il loro contenuto (salvo eccezioni).
+
+All'interno delle parentesi graffe 
+con var verrà letto anche fuori 
+con let non verrà letto anche fuori 
+
+
+Il block scoper è il codice rinchiuso tra {} 
+variabile globale sarà disponibile ovunque, dichiarata fuori da funzioni 
+
+
+
+# Commenti 
+due modi per scrivere commenti 
+// e /* */
+
+#Operatori 
+
+## Operatori aritmetici 
+
+let e = 1;
+e = 1 + 1; //somma
+e = 1 - 1; //sottrazione
+e = 1 * 1; //moltiplicazione
+e = 1 / 1; //divisione
+e = 2 ** 2; //potenza
+e = 2 % 2; //modulo (ritorna il resto della divisione)
+e = e++; //incremento
+e = e--; //decremento
+
+
+let a = "Hello";
+let b = "World";
+let c = a + " " + b; // "Hello World"
+c = 2 + "2"; // 4
+c = a + 10; // "Hello10"
+
+La precedenza sulle operazioni è la medesima usata in aritmetica:
+
+## Operatori di assegnazione
+
+let a = 1;
+let c; //omettendo = c avrà valore undefined
+x += y // come x = x + y
+x -= y // come x = x - y
+x *= y // come x = x * y
+x /= y // come x = x / y
+x %= y // come x = x % y
+x **= y //come x = x ** y
+
+## Operatori di comparazione
+
+Gli operatori di comparazione ritornano true o false in base al risultato della comparazione:
+== ⇒ uguaglianza per valori
+=== ⇒ uguaglianza per valori e tipo
+!= ⇒ diverso per valori
+!== ⇒ diverso per valori e tipo
+> ⇒ maggiore
+< ⇒ minore
+>= ⇒ maggiore o uguale
+<= ⇒ minore o uguale
+? ⇒ operatore ternario
+
+## Operatori logici
+(AND, OR, NOT)
+
+&& ⇒ and
+|| ⇒ or
+! ⇒ not
+
+
+# Tipi di dati
+
+Linguaggio tipizzazione debole -- non è necessario dichiarare il tipo
+
+## Dati primitivi :
+
+^ String
+  let letter = "Y";
+  let lastName = "Johnson";
+
+^ Number 
+  let number1= 32;
+  let number2= 76;
+
+^ Bigint -- 
+
+^ Boolean 
+  let campo1 = True;
+  let campo 2 = False;
+
+^ Undefined
+  let valore;
+
+^ Null 
+
+^ Symbol -- 
+
+## Dati non primitivi 
+
+^ Oggetti  
+let Obj = 
+
+^ Array 
+let Array = ["val 1", "val 2", "val 3"]
+
+^ Date 
+  const date = new Date ("2022-03-14");
+
+
+# typeOf 
+
+Ottenere un tipo di dato 
+
+es: 
+typeOf 2;
+typeOf "string";
+
+
+Una variabile contenente un valore primitivo conserverà il valore stesso 
+Una variabile contenete un non primitivo conserverà un puntamento 
+
+
+NaN esce quando provi a fare operazioni aritmetiche quando NON TUTTO è UN NUMERO 
+
+# Funzioni 
+
+function myfunct(){
+let a =2;
+return(a);
+}
+
+Per richiamare una funzione 
+
+myFunc();
+
+Dichiarare una funzione anonima assegnata a varibaile in modo da portela riusare 
+
+const Var = function (param1, param2)
+
+NB -- asseganre funzioni anonime a CONST 
+
+
+# Oggetti 
+
+es: let ogj = { 
+  Nome = "Sara",
+  Cognome = "Novella",
+}
+
+Gli array concentogono elenco dati
+Gli oggetti contengono elenco dati con key per recuoerarlo più facilmente 
+
+## Proprietà di un oggetto 
+
+^ Dot Notation --> console.log(obj.name);
+
+^ Bracket Notation --> console.log(obj["name"]);
+
+
+
+
+
+
